@@ -41,7 +41,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/PinkyToe87/NFTCard.git)
-- Live Site URL: [Add live site URL here](https://pinkytoe87.github.io/NFTCard/m)
+- Live Site URL: [Add live site URL here](https://pinkytoe87.github.io/NFTCard/)
 
 ## My process
 
