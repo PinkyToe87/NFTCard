@@ -42,7 +42,158 @@ body {
 
 .overlay {
   position: absolute;
+  top: 0;* {
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.main-bg {
+  background-color: hsl(217, 54%, 11%);
+}
+
+.nft {
+  border-radius: 12px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 1rem;
+  font-family: "Outfit", sans-serif;
+  max-width: 350px;
+}
+
+.figure {
+    position: relative;
+    width: 100%;
+}
+
+.figure img {
+    width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
   top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s ease;
+  background-color: hsla(178, 100%, 50%, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay img {
+    width:20%;
+}
+
+.overlay:hover  {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.nft h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 2.5vh;
+  font-weight: 800;
+  margin: 1rem 0 1rem 0;
+}
+
+.title {
+  text-decoration: none;
+}
+
+.nft .tagline {
+    font-size: 2.2vh;
+    font-weight: lighter;
+}
+
+.nft h1:hover,
+.nft .creator:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.nft .tagline,
+.nft .days_left,
+.nft p {
+  color: hsl(215, 51%, 70%);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+
+.left-child > *,
+.right-child > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.left-child img {
+  width: 12px;
+}
+
+
+.right-child img {
+  width: 16px;
+}
+
+.nft .eth,
+.nft .days_left {
+  margin: 0;
+}
+
+.nft .eth {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  font-size: 2vh;
+}
+
+.nft .days_left {
+    font-size: 2vh;
+  }
+
+.flex-container-creator {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.creator_img {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.flex-container-creator p {
+  font-weight: 600;
+  font-size: 2vh;
+}
+
+.creator {
+  color: white;
+}
+
   right: 0;
   left: 0;
   bottom: 0;
